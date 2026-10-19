@@ -1,0 +1,16 @@
+{
+  "mosaicFactor": 14,
+  "blurRadius": 64,
+  "zoomFactor": 2,
+  "copyToDisk": false,
+  "copyOnSave": false,
+  "skipSaveDialog": false,
+  "saveDir": "",
+  "toolStyle": {
+  "rect": {
+    "color": "#74c7ec",
+    "width": 4,
+    "filled": false
+  }
+}
+}

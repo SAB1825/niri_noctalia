@@ -1,0 +1,108 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "key": {
+      "width": 10,
+    },
+    "separator": "",
+  },
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/fastfetch/denji1.png",
+    "width": 40,
+    "height": 15,
+    "padding": {
+      "top": 0,
+      "right": 3,
+    },
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "keyColor": "#cba6f7",
+    },
+    {
+      "type": "separator",
+      "keyColor": "#45475a",
+    },
+    {
+      "type": "os",
+      "key": "󰣇 OS",
+      "keyColor": "#89b4fa",
+      "format": "{name} {version-id}",
+    },
+    {
+      "type": "kernel",
+      "key": "󰌽 KER",
+      "keyColor": "#74c7ec",
+      "format": "{release} {machine}",
+    },
+    {
+      "type": "host",
+      "key": "󰍹 HOST",
+      "keyColor": "#b4befe",
+    },
+    {
+      "type": "uptime",
+      "key": "󰥔 UP",
+      "keyColor": "#94e2d5",
+    },
+    {
+      "type": "packages",
+      "key": "󰏗 PKG",
+      "keyColor": "#a6e3a1",
+      "format": "{all}",
+    },
+    {
+      "type": "shell",
+      "key": "󰞷 SH",
+      "keyColor": "#f9e2af",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "terminal",
+      "key": "󰆍 TERM",
+      "keyColor": "#f5c2e7",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "cpu",
+      "key": "󰻠 CPU",
+      "keyColor": "#fab387",
+      "format": "{name} ({cores})",
+    },
+    {
+      "type": "memory",
+      "key": "󰍛 RAM",
+      "keyColor": "#f38ba8",
+      "format": "{used} / {total} ({percentage})",
+    },
+    {
+      "type": "swap",
+      "key": "󰓡 SWP",
+      "keyColor": "#eba0ac",
+      "format": "{used} / {total} ({percentage})",
+    },
+    {
+      "type": "disk",
+      "key": "󰋊 SSD",
+      "keyColor": "#cba6f7",
+      "format": "{size-used} / {size-total} ({size-percentage})",
+    },
+    {
+      "type": "battery",
+      "key": "󰁹 BAT",
+      "keyColor": "#a6e3a1",
+      "format": "{capacity}%",
+    },
+    {
+      "type": "locale",
+      "key": "󰆌 LANG",
+      "keyColor": "#89dceb",
+    },
+    {
+      "type": "break",
+    },
+  ],
+}

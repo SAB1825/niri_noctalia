@@ -1,0 +1,57 @@
+# OS and desktop-generated files
+.DS_Store
+Thumbs.db
+.directory
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Caches and runtime data
+cache/
+Cache/
+.cache/
+*.pid
+*.sock
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+
+# Browser profiles and personal data
+mozilla/
+net.imput.helium/
+vesktop/
+
+# GTK generated state
+gtk-3.0/bookmarks
+dconf/
+
+# Application state and history
+gh
+go 
+Code - OSS
+pulse/
+mimeapps.list
+user-dirs.dirs
+user-dirs.locale
+
+# GPU Screen Recorder generated recordings
+gpu-screen-recorder
+gpu-screen-recorder/*.mp4
+gpu-screen-recorder/*.mkv
+gpu-screen-recorder/*.webm
+
+# Build artifacts
+build/
+dist/
+out/

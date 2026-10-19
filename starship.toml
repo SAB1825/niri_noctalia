@@ -1,0 +1,74 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "catppuccin_mocha"
+add_newline = true
+command_timeout = 1000
+
+format = """
+$directory$git_branch$git_status
+$character"""
+
+right_format = "$cmd_duration$nodejs$golang$rust$python"
+
+[palettes.catppuccin_mocha]
+mauve    = "#cba6f7"
+red      = "#f38ba8"
+peach    = "#fab387"
+yellow   = "#f9e2af"
+green    = "#a6e3a1"
+overlay0 = "#6c7086"
+
+# ── Path ──
+[directory]
+style = "bold mauve"
+format = "[$path]($style)[$read_only]($read_only_style) "
+read_only = " 󰌾"
+read_only_style = "red"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# ── Git ──
+[git_branch]
+symbol = "\ue0a0 "
+style = "green"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "peach"
+format = "([$all_status$ahead_behind]($style) )"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+modified = "!"
+staged = "+"
+untracked = "?"
+deleted = "✘"
+conflicted = "="
+stashed = ""
+
+# ── Right side (muted, only when relevant) ──
+[cmd_duration]
+min_time = 2000
+format = "[$duration ](yellow)"
+
+[nodejs]
+symbol = "node "
+format = "[$symbol$version ](overlay0)"
+
+[golang]
+symbol = "go "
+format = "[$symbol$version ](overlay0)"
+
+[rust]
+symbol = "rust "
+format = "[$symbol$version ](overlay0)"
+
+[python]
+symbol = "py "
+format = "[$symbol$version( \\($virtualenv\\)) ](overlay0)"
+
+# ── Prompt character ──
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold mauve)"
