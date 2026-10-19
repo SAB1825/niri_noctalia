@@ -9,7 +9,7 @@
   "logo": {
     "type": "auto",
     "source": "~/.config/fastfetch/denji1.png",
-    "width": 40,
+    "width": 44,
     "height": 15,
     "padding": {
       "top": 0,
